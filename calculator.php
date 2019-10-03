@@ -10,60 +10,60 @@ if ($input !== "%" and
     $input !== "-" and
     $input !== "+") {
     echo "stop daarmee";
-    Exit;
+    exit();
 
 }
 
 
     if ($input == "+") {
     echo("First>\n");
-    $a = readline();
-     if (!is_numeric($a)){
+    $nOne = readline();
+     if (!is_numeric($nOne)){
          echo "Thats not a number\n";
-         Exit;
+         exit();
      }
 
     echo("Second>\n");
-    $b = readline();
-    if (!is_numeric($b)){
+    $nTwo = readline();
+    if (!is_numeric($nTwo)){
         echo "Thats not a number\n";
-        Exit;
+        exit();
     }
     echo("antwoord --->   ");
-    echo($a + $b);
+    echo($nOne + $nTwo);
 }
 
 if ($input == "-") {
     echo("First>\n");
-    $c = readline();
-    if (!is_numeric($c)){
+    $nThree = readline();
+    if (!is_numeric($nThree)){
         echo "Thats not a number\n";
-        Exit;
+        exit();
     }
     echo("Second>\n");
-    $d = readline();
-    if (!is_numeric($d)){
+    $nFour = readline();
+    if (!is_numeric($nFour)){
         echo "Thats not a number\n";
-        Exit;
+        exit();
     }
     echo("antwoord --->   ");
-    echo($c - $d);
+    echo($nThree - $nFour);
 }
 
 if ($input == "%") {
     echo("First>\n");
-    $e = readline();
-    if (!is_numeric($e)){
+    $nFive = readline();
+    if (!is_numeric($nFive)){
         echo "Thats not a number\n";
-        Exit;
+        exit();
     }
     echo("Second>\n");
-    $f = readline();
-    if (!is_numeric($f)){
+    $nSix = readline();
+    if (!is_numeric($nSix)){
         echo "Thats not a number\n";
-        Exit;
+        exit();
     }
     echo("antwoord --->   ");
-    echo($e % $f);
+    echo($nFive % $nSix);
 }
 
