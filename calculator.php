@@ -15,7 +15,7 @@ if ($input !== "%" and
 }
 
 
-    if ($input == "+") {
+    if ($input === "+") {
     echo("First>\n");
     $nOne = readline();
      if (!is_numeric($nOne)){
@@ -33,7 +33,7 @@ if ($input !== "%" and
     echo($nOne + $nTwo);
 }
 
-if ($input == "-") {
+if ($input === "-") {
     echo("First>\n");
     $nThree = readline();
     if (!is_numeric($nThree)){
@@ -50,7 +50,7 @@ if ($input == "-") {
     echo($nThree - $nFour);
 }
 
-if ($input == "%") {
+if ($input === "%") {
     echo("First>\n");
     $nFive = readline();
     if (!is_numeric($nFive)){
